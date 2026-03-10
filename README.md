@@ -14,4 +14,21 @@ sudo apt update
 sudo apt install python3-pip -y
 pip3 install flask
 
-Буду добавлять.
+Для запуска лучше делать вот так:
+nohup python3 admin.py > admin.log 2>&1 &
+nohup python3 client.py > client.log 2>&1 &
+
+Чтобы убить процесс:
+
+Найти процесс админ-панель
+ps aux | grep admin.py
+Убить процесс (замените 12345 на ваш PID)
+kill 12345
+Найти процесс пользователькие тесты
+ps aux | grep admin.py
+Убить процесс (замените 12345 на ваш PID)
+kill 12345
+
+Буду добавлять когда буде желание что модифицировать. :)
+
+Если захотите поддержать рублём: https://dalink.to/tigerzloi
