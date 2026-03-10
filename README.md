@@ -15,7 +15,9 @@ sudo apt install python3-pip -y
 pip3 install flask
 
 Для запуска лучше делать вот так:
+
 nohup python3 admin.py > admin.log 2>&1 &
+
 nohup python3 client.py > client.log 2>&1 &
 
 Чтобы убить процесс:
